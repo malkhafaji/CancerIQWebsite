@@ -28,12 +28,11 @@ public class Mailer extends HttpServlet{
 	writer.println(request.getParameter("title"));
 	writer.println(request.getParameter("email"));
 	writer.println(request.getParameter("type"));
-	// // Recipient's email ID needs to be mentioned.
-	// String to = "abcd@gmail.com";
  
 	// // Sender's email ID needs to be mentioned
 	String from = "navigator@cancer-iq.com";
-	String to = "chrisbun@gmail.com";
+	//String to = "chrisbun@gmail.com";
+	String to = "dev@cancer-iq.com";
  
 	// // Assuming you are sending email from localhost
 	String host = "localhost";
@@ -74,9 +73,15 @@ public class Mailer extends HttpServlet{
 	    message.addRecipient(Message.RecipientType.TO,
 				 new InternetAddress(to));
 	    // Set Subject: header field
-	    message.setSubject("This is the Subject Line!");
+	    message.setSubject("[TEST] Demo Request");
 	    // Now set the actual message
-	    message.setText("This is actual message");
+	    message.setText("Test message for people requesting demos on the CancerIQ site. \n" 
+			    + "Name: " + name + "\n"
+			    + "Org: " + org  + "\n"
+			    + "Title: " + form_title + "\n"
+			    + "email: " + email + "\n"
+			    + "Type: " + type + "\n");
+			    
 	    // Send message
 	    Transport.send(message);
 	    String title = "Send Email";
