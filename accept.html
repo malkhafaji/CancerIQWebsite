@@ -380,6 +380,72 @@
 
     <div id="topcontrol" title="Scroll Back to Top" style="position: fixed; bottom: 5px; right: 5px; opacity: 0; cursor: pointer;"><i class="fa fa-angle-up"></i>
     </div>
+<div class="modal fade" id="requestModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h2 class="modal-title center ">Discover CancerIQ </h2> 
+      </div>
+      <div class="modal-body">
+
+            <div>
+	      <form method="POST" id="requestForm">
+                <div class="row fadeInUp slideOutUp">
+
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8">
+
+                        <div class="row slideOutUp fadeInUp">
+                            <div class="form-group fadeInLeft">
+                                <label class="control-label" for="exampleInputEmail1">Name</label>
+                                <input type="text" class="form-control fadeInLeftBig" id="exampleInputEmail1" placeholder="Enter name" name="name">
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label" for="exampleInputEmail1">Company/Organization</label>
+                                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter company/organization" name="org">
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label" for="exampleInputEmail1">Title</label>
+                                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter title" name="title">
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label" for="exampleInputEmail1">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" name="email">
+                            </div>
+
+                            <div class="form-group">
+                                <div class="form-group">
+                                    <label class="control-label" for="formInput1">I am a...</label>
+                                    <select id="formInput1" class="form-control" name="type">
+                                        <option>Patient</option>
+                                        <option>Healthcare Professional</option>
+                                        <option>Hospital Representative</option>
+                                    </select>
+                                </div>
+
+                            </div>
+			    <div class="center col-md-12">
+                              <button type="submit" class="col-md-offset-3 col-md-6 btn btn-primary" id="requestSubmit"> Submit</button>
+
+			    </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+	      </form>
+            </div>
+
+      </div>
+      <div class="modal-footer">
+        <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
+        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 </body>
+
 
 </html>
